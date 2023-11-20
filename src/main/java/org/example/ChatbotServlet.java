@@ -16,7 +16,7 @@ public class ChatbotServlet extends HttpServlet {
     }
 
     private void setAccessControlHeaders(HttpServletResponse resp) {
-        resp.setHeader("Access-Control-Allow-Origin", "*"); // Allows requests from all origins. For production, replace '*' with your frontend's URL.
+        resp.setHeader("Access-Control-Allow-Origin", "*");
         resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
         resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
     }
